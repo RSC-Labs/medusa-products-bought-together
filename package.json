@@ -1,5 +1,5 @@
 {
-  "name": "medusa-products-bought-together",
+  "name": "@rsc-labs/medusa-products-bought-together",
   "version": "0.0.1",
   "description": "Monitor and get products which are bought together",
   "author": "RSC Labs (https://rsoftcon.com)",
