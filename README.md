@@ -1,4 +1,4 @@
-<img src='https://raw.githubusercontent.com/RSC-Labs/medusa-products-bought-together/main/docs/icon_1280.png' width='300' height='150' alt='Medusa products bought together icon'>
+<img src='https://raw.githubusercontent.com/RSC-Labs/medusa-products-bought-together/main/docs/icon_1280.png' width='160' height='150' alt='Medusa products bought together icon'>
 
 Medusa "Products Bought Together" is a plugin which monitors and provides API for getting products which are frequently bought together.
 
