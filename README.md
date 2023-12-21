@@ -24,6 +24,8 @@ const plugins = [
   }
 ]
 ```
+3. Run migrations, e.g. `npx medusa migrations run` (see: https://docs.medusajs.com/development/entities/migrations/overview) as plugin uses new tables.
+
 ## How it works?
 
 When customer places new order, plugin takes information about all products in order and creates entries in database. If there is already existing pair of products (because they were bought together before), then it increases its ranking. In a result, there is a stored information about relations between products and how frequently they are bought together.

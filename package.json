@@ -1,6 +1,6 @@
 {
   "name": "@rsc-labs/medusa-products-bought-together",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Monitor and get products which are bought together",
   "author": "RSC Labs (https://rsoftcon.com)",
   "license": "MIT",
