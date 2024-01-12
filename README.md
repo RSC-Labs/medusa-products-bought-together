@@ -10,14 +10,14 @@ It is a common scenario for ecommerce, which leds to increasing sales by recomme
 
 ## Getting Started
 
-1. Install the package with `yarn add medusa-products-bought-together` or `npm i medusa-products-bought-together`.
+1. Install the package with `yarn add @rsc-labs/medusa-products-bought-together` or `npm i @rsc-labs/medusa-products-bought-together`.
 2. In `medusa-config.js`, add the plugin to the `plugins` array.
 
 ```js
 const plugins = [
   // ... other plugins
   {
-    resolve: `medusa-products-bought-together`,
+    resolve: `@rsc-labs/medusa-products-bought-together`,
     options: {
       
     }
@@ -39,7 +39,7 @@ To use it, you can use API described below:
 ```yaml
 openapi: 3.0.0
 info:
-  title: medusa-products-bought-together API
+  title:  API
   description: API for plugin
   version: 0.0.1
 paths:
@@ -104,7 +104,7 @@ You can change this limit by providing `getLimit` option to plugin:
 const plugins = [
   // ... other plugins
   {
-    resolve: `medusa-products-bought-together`,
+    resolve: ``,
     options: {
         getLimit: 10
     }
