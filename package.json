@@ -1,6 +1,6 @@
 {
   "name": "@rsc-labs/medusa-products-bought-together",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Monitor and get products which are bought together",
   "author": "RSC Labs (https://rsoftcon.com)",
   "license": "MIT",
@@ -37,7 +37,7 @@
     "typescript": "^4.5.2"
   },
   "peerDependencies": {
-    "@medusajs/medusa": "1.19.0"
+    "@medusajs/medusa": "^1.20.7"
   },
   "jest": {
     "globals": {
