@@ -8,6 +8,10 @@
   Medusa Products Bought Together
 </h1>
 
+<h2>
+  Note: This plugin will be migrated to Medusa v2, when v2 will reach production readiness.
+</h2>
+
 Medusa "Products Bought Together" is a plugin which monitors and provides API for getting products which are frequently bought together.
 
 ### Why?
