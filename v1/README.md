@@ -8,6 +8,10 @@
   Medusa Products Bought Together
 </h1>
 
+<h2>
+  Note: This plugin will be migrated to Medusa v2, when v2 will reach production readiness.
+</h2>
+
 Medusa "Products Bought Together" is a plugin which monitors and provides API for getting products which are frequently bought together.
 
 ### Why?
@@ -16,21 +20,23 @@ When customer wants to buy product A, he can get information about other product
 
 It is a common scenario for ecommerce, which leds to increasing sales by recommending such products to customers.
 
-### Supported Medusa versions
+## Getting Started
 
-Choose README dependent on your Medusa version.
+1. Install the package with `yarn add @rsc-labs/medusa-products-bought-together` or `npm i @rsc-labs/medusa-products-bought-together`.
+2. In `medusa-config.js`, add the plugin to the `plugins` array.
 
-<h2>
-  Medusa V1
-</h2>
-
-[README](https://github.com/RSC-Labs/medusa-products-bought-together/blob/main/v1/README.md)
-
-<h2>
-  Medusa V2
-</h2>
-
-[README](https://github.com/RSC-Labs/medusa-products-bought-together/blob/main/v2/README.md)
+```js
+const plugins = [
+  // ... other plugins
+  {
+    resolve: `@rsc-labs/medusa-products-bought-together`,
+    options: {
+      
+    }
+  }
+]
+```
+3. Run migrations, e.g. `npx medusa migrations run` (see: https://docs.medusajs.com/development/entities/migrations/overview) as plugin uses new tables.
 
 ## How it works?
 
@@ -100,6 +106,29 @@ Response:
     }
 ]
 ```
+### Configuration
+
+There is a limit set for GET requests equal to: `5`
+
+You can change this limit by providing `getLimit` option to plugin:
+
+```js
+const plugins = [
+  // ... other plugins
+  {
+    resolve: ``,
+    options: {
+        getLimit: 10
+    }
+  }
+]
+```
+
+## TODO
+
+[ ] Tests
+
+[ ] Make limit per request, as we can't use "query" params in API routes (req.body in GET REST API sounds weak).
 
 ## Contribution
 
@@ -111,4 +140,4 @@ MIT
 
 ---
 
-© 2025 RSC https://rsoftcon.com/
+© 2023 RSC https://rsoftcon.com/
