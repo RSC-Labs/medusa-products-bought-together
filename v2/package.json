@@ -1,6 +1,6 @@
 {
   "name": "@rsc-labs/medusa-products-bought-together-v2",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Monitor and get products which are bought together",
   "author": "RSC Labs (https://rsoftcon.com)",
   "license": "MIT",
@@ -9,7 +9,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/RSC-Labs/medusa-documents"
+    "url": "https://github.com/RSC-Labs/medusa-products-bought-together"
   },
   "exports": {
     "./package.json": "./package.json",

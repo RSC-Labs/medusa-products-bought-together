@@ -48,7 +48,6 @@ class ProductsBoughtTogetherService extends MedusaService({
         },
       ],
     })
-    console.log(productsBoughtTogether);
     return productsBoughtTogether;
   }
 
